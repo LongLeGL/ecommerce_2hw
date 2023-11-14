@@ -4,6 +4,8 @@ import {BrowserRouter, createBrowserRouter,
   RouterProvider, Routes, Route} from "react-router-dom";
 
 import './index.css';
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+
 
 import App from './views/App';
 import Login from './views/Login';
@@ -60,7 +62,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <PayPalScriptProvider options={{"clientId":"ASzyUuWNg7SKgxpZs-IGy2ImRXn1McC31v6PHbGGVot8r9HZHIYWr7rH5rlpthjts_RE-RuzQAzrJnZp"}}>
+      <RouterProvider router={router} />
+      </PayPalScriptProvider>
   </React.StrictMode>
 );
 
