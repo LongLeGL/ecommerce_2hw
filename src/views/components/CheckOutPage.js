@@ -63,7 +63,7 @@ function CheckOutPage() {
 								<div className='flex flex-col gap-[8px]'>
 									<div className='text-xl text-[#1d1f1f]'>
 										OPPO A57 Máy mới nguyên hộp
-									</div>
+									</div> 
 									<div className=' text-base text-[#5d5f5f]'>
 										Color: Black
 									</div>
