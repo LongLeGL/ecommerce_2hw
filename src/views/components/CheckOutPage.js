@@ -10,10 +10,11 @@ import Viettel from "../../icons/viettel.png"
 import Momo from "../../icons/momo.png"
 import VnQr from "../../icons/vnpay.png"
 import Paypal from "../../icons/paypal.png"
+import Phone from "../../icons/phone.jpg"
 
 function CheckOutPage() {
-
 	const [selected, setSelected] = useState(false)
+
 	const product  = {
         description: "Bucklo Wrop Wooden Table",
         price: "109.36"
@@ -54,18 +55,17 @@ function CheckOutPage() {
 						<div className='w-full h-full bg-white flex items-center justify-between'>
 							<div className=' flex items-center justify-start pl-[94px] w-[450px]'>
 								<img 
-									src={CheckoutItem}
+									src={Phone}
 									alt='checkout item table'
+									width={106}
+									height={106}
 								/>
 								<div className='flex flex-col gap-[8px]'>
 									<div className='text-xl text-[#1d1f1f]'>
-										Bucklo Wrop Wooden Table
+										OPPO A57 Máy mới nguyên hộp
 									</div>
 									<div className=' text-base text-[#5d5f5f]'>
-										Color: Brown
-									</div>
-									<div className='text-base text-[#5d5f5f]'>
-										Dimension: 40 x 60 cm
+										Color: Black
 									</div>
 								</div>
 							</div>
@@ -241,7 +241,7 @@ function CheckOutPage() {
 					<label class="container-payment">
 						<div className='flex items-center justify-start gap-[10px]'>	
 							<img 
-								src={Viettel}
+								src={Momo}
 								alt='cash'
 							/>
 							Momo

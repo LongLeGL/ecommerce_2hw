@@ -26,12 +26,12 @@ function ProductViewing(props) {
                                 <div className="rating-large-solid-instance">
                                     <Star stars={4.7} reviews={90} />
                                 </div>
-                                <div className="text-wrapper-9">2.550.000 đ</div>
+                                <div className="text-wrapper-9">$69.36</div>
                                 <div className="overlap-group-2">
                                     <div className="flexcontainer">
                                         <p className="text">
                                             <span className="span">
-                                                OPPO A57 Máy mới nguyên hộp Giá 2TR550K <br />
+                                                OPPO A57 Máy mới nguyên hộp<br />
                                             </span>
                                         </p>
                                         <p className="text">
