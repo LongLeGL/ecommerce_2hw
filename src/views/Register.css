@@ -1,0 +1,15 @@
+#InputContainerToS{
+    margin: auto;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+    height: 3em;
+    width: 80%;
+    border: none;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    gap: 1em;
+
+    font-size: 15px;
+}

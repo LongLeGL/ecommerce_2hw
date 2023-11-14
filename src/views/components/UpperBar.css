@@ -1,0 +1,181 @@
+.UpperBar {
+    width: 100vw;
+    max-width:100%;
+    height: 16vh;
+    margin: 0;
+    background-color: white;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 1px;
+    border-color: var(--border_gray);
+    border-bottom-style: solid;
+    position: fixed;
+}
+
+#upperControlsBar{
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em 0;
+}
+
+.UpperbarHomeButton{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    margin-top: 0.2em;
+    /* border: 2px var(--border_gray) solid; */
+}
+
+#logoRedCircle{
+    position: relative;
+    width: 6.8vh;
+    height: 6.8vh;
+    top: 0;
+    left: 0;
+    background-color: #e9672b;
+    border-radius: 50%;
+}
+
+#upBar_Logo{
+    margin-top: 0px;
+    display: flex;
+}
+#logoNumber{
+    position: relative;
+    width: 30px;
+    height: 25px;
+    top: -5px;
+    left: 10px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 42px;
+    letter-spacing: 1.1px;
+    line-height: 66px;
+    white-space: nowrap;
+}
+#logoText{
+    position: relative;
+    width: 30px;
+    height: 25px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 1.1px;
+    line-height: 7.5vh;
+    white-space: nowrap;
+}
+
+.upperBarBtns{
+    padding-top: 0.3em;
+}
+
+#cartBtn {
+    height: 5vh;
+    width: fit-content;
+    border: none;
+
+    background-color: transparent;
+    color: rgba(93, 95, 95, 1);
+
+    font-size: 16px;
+    line-height: 5vh;
+}
+
+.BarLoginButton{
+    height: 5vh;
+    width: fit-content;
+    max-width: 30em;
+    overflow:hidden;
+    border: none;
+
+    background-color: transparent;
+    color: rgba(93, 95, 95, 1);
+
+    font-family: "Roboto-Light", Helvetica;
+    font-weight: 300;
+    color: var(--neutraldarker);
+    font-size: 16px;
+
+    display: inline-flex;
+    gap: 0.3em;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+#navBar {
+    height: 6vh;
+    border-top: rgb(231, 220, 220) solid 1px;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    padding-left: 8.3em;
+}
+
+#navBar a {
+    font-family: "Roboto-Light", Helvetica;
+    font-weight: 300;
+    color: var(--neutraldarker);
+    font-size: 14px;
+    letter-spacing: 0.32px;
+}
+
+
+#loginModal, #registerModal{
+    display: flex;
+    width: 75vw;
+    height: fit-content;
+}
+
+.modalCloseBtn{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: transparent;
+    font-size: 14px;
+    color: gray;
+}
+
+#modalImg{
+    width: 50vw;
+    background-image: url(../../../public/modalImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -25%;
+    margin-top: -30%;
+    content: ' ';
+    padding-left: 3em;
+}
+
+#loginModalBody, #registerModalBody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#loginModal_registerSection{
+    display: flex;
+    justify-content: center;
+    gap: 0.75em;
+    margin-bottom: 2em;
+}
+#loginModal_registerSection span{
+    font-weight: 300;
+    color: #5c5e5e;
+    font-size: 14px;
+}
+#openRegisModalBtn{
+    background-color: transparent;
+    padding: 0 0;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 300;
+    color: #2f80ed;
+    font-size: 14px;
+}
