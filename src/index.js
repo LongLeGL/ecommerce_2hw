@@ -14,6 +14,7 @@ import ProductViewing from './views/ProductViewPage';
 import HomePage from './views/HomePage';
 import CheckOutPage from './views/components/CheckOutPage';
 import ProductPosting from './views/ProductPostingPage';
+import Receipt from './views/components/Receipt';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/2HandWarehouse/Checkout",
         element: <CheckOutPage/>,
+      },
+      {
+        path:"/2HandWarehouse/receipt/",
+        element: <Receipt/>,
       },
     ],
   },
