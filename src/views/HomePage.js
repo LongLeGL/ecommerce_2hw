@@ -151,19 +151,20 @@ function HomePage() {
 				<div className="sectionName">Lastest Products</div>
 				<div className="LP">
 					<div className="columnLP">
-						<div className="blockLP">
-							<img className="imageLP"
-								loading="lazy"
-								srcSet={LP1}
-							/>
-							<div className="LPinfo">
-								<div className="LPname">Bucklo Wrop Wooden Table</div>
-								<div className="LPprice">$56.12</div>
-								<div className="LPaddress">TP. Hồ Chí Minh</div>
-								<div className="LPadd">Add to Cart</div>
+						<a href='/2HandWarehouse/ViewProduct'>
+							<div className="blockLP">
+								<img className="imageLP"
+									loading="lazy"
+									srcSet={LP1}
+								/>
+								<div className="LPinfo">
+									<div className="LPname">Oppo A57 Ram 6/128G xanh</div>
+									<div className="LPprice">$69.36</div>
+									<div className="LPaddress">TP. Hồ Chí Minh</div>
+									<div className="LPadd">Add to Cart</div>
+								</div>
 							</div>
-
-						</div>
+						</a>
 						<div className="blockLP">
 							<img className="imageLP"
 								loading="lazy"
