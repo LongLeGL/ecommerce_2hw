@@ -12,7 +12,10 @@ import VnQr from "../../icons/vnpay.png"
 import Paypal from "../../icons/paypal.png"
 import Phone from "../../icons/phone.jpg"
 
+
 function CheckOutPage() {
+	const navigate = useNavigate();
+
 	const [selected, setSelected] = useState(false)
 
 	const product  = {
@@ -27,11 +30,11 @@ function CheckOutPage() {
     return (
         <div className='CheckOutPage'>
             
-			<div className="ml-[290px] mb-[30px] text-3xl font-light text-gray-600 mt-[40px]">
+			<div className="ml-[130px] mb-[30px] text-3xl font-light text-gray-600 mt-[40px]">
 				Check out
 			</div>
 
-			<div class="ml-[255px] flex gap-[20px]">
+			<div class="ml-[135px] flex gap-[20px]">
 				<div className='w-[932px] h-[202px] p-[2px] bg-[#e3e3e3] mb-[30px] flex flex-col items-center rounded-lg'>
 					<div className='flex flex-col w-full bg-white rounded-lg'>
 						<div className='flex items-center justify-between '>
@@ -155,7 +158,7 @@ function CheckOutPage() {
 							onApprove={async(data, actions) => {
 								const order = await actions.order?.capture()
 								console.log("order: ", order)
-
+								navigate("/2HandWarehouse/receipt/")
 								handleApprove(data.orderID)
 							}}
 						/>
@@ -164,7 +167,7 @@ function CheckOutPage() {
 			</div>
 
 
-			<div class="flex items-start justify-between ml-[248px] w-[940px] mb-[60px]">
+			<div class="flex items-start justify-between ml-[128px] w-[900px] mb-[60px]">
 				<div class="delivery">
 					<div class="delivery-payment-tittle font-light text-gray-600">
 						Delivery method
