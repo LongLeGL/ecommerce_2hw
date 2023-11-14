@@ -59,6 +59,17 @@ const router = createBrowserRouter([
   },
 ]);
 
+let states = {
+  loggedIn: false,
+  order: false,
+  approved: false
+};
+let states_string=JSON.stringify(states);
+console.log(states_string);
+
+sessionStorage.setItem('states', states_string)
+console.log('States initialized !')
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

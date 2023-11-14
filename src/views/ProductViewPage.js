@@ -11,7 +11,10 @@ import Product from "./components/Product";
 const API = ""
 
 function ProductViewing(props) {
-    console.log(props)
+    useEffect(() => {
+          window.scrollTo(0, 0);
+    });
+    // console.log(props)
     return (
         <div className="product-viewing">
             <div className="div-2">
@@ -61,7 +64,7 @@ function ProductViewing(props) {
                                 </NavLink>
 
 
-                                <NavLink to="">
+                                <NavLink to="/2HandWarehouse/Checkout">
                                     <Button className="button-instance">Buy It Now!</Button>
                                 </NavLink>
 

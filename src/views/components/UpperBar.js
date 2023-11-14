@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faUser, faX } from '@fortawesome/free-solid-svg-icons'
@@ -25,6 +25,10 @@ const loginModalStyles = {
 
 ReactModal.setAppElement('#root');
 
+let states = sessionStorage.getItem('states');
+states = JSON.parse(states);
+console.log('Upper bar states:',states);
+
 function UpperBar (props) {
 	const username = sessionStorage.getItem('username');
 	const navigate = useNavigate()
@@ -46,7 +50,7 @@ function UpperBar (props) {
 	const [ModalRegisterIsOpen, setModalRegisterIsOpen] = React.useState(false);
 
 	function openModal(selection) {
-		if (selection=="login"){
+		if (selection==="login"){
 			setModalLoginIsOpen(true);
 		}
 		else{
@@ -60,7 +64,7 @@ function UpperBar (props) {
 	}
 
 	function closeModal(selection) {
-		if (selection=="login"){
+		if (selection==="login"){
 			setModalLoginIsOpen(false);
 		}
 		else{
@@ -86,7 +90,7 @@ function UpperBar (props) {
 
 				<div className='upperBarBtns'>
 					<button id="cartBtn" onClick={null}><FontAwesomeIcon icon={faCartShopping} /></button>
-					<button className='BarLoginButton' onClick={onclUpperBarUserBtn}><FontAwesomeIcon icon={faUser} />{(username) ? username: 'Sign in'}</button>
+					<button className='BarLoginButton' onClick={onclUpperBarUserBtn}><FontAwesomeIcon icon={faUser} />{(states['loggedIn']) ? null: 'Sign in'}</button>
 				</div>
 			</div>
 

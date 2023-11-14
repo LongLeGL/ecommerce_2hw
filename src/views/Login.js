@@ -1,6 +1,5 @@
 import './Login.css';
-import logoImg from '../icons/logo.png';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
@@ -9,14 +8,21 @@ function Login() {
   const [password, setPassword] = useState("");
   const [errMsg, seterrMsg] = useState("");
 
+  let states = sessionStorage.getItem('states');
+  states = JSON.parse(states)
+
   function handleSubmit(e) {
     e.preventDefault();
     seterrMsg('');
     if (!email) seterrMsg("Username or Email required !");
     else if (!password) seterrMsg("Password required !");
     else {
-      // perform authentication
-      console.log('authenticating...')
+      if (email=='admin' && password=='admin'){
+        states['loggedIn'] = true;
+        sessionStorage.setItem('states', JSON.stringify(states));
+        window.location.href = "/2HandWarehouse/Home";
+      }
+      else seterrMsg("Wrong username or password !");
     }
   }
 

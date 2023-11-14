@@ -19,8 +19,9 @@ import LP7 from './images/LP7.png';
 import LP8 from './images/LP8.png';
 import book1 from './images/book1.png';
 import book2 from './images/book2.png';
+import ip from '../icons/phone.jpg';
 import { useState } from 'react';
-import { Link, Routes, Route, Outlet } from 'react-router-dom';
+import { Link, Routes, Route, Outlet, NavLink } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -151,11 +152,11 @@ function HomePage() {
 				<div className="sectionName">Lastest Products</div>
 				<div className="LP">
 					<div className="columnLP">
-						<a href='/2HandWarehouse/ViewProduct'>
-							<div className="blockLP">
+						<div className="blockLP">
+							<NavLink to='/2HandWarehouse/ViewProduct'>
 								<img className="imageLP"
 									loading="lazy"
-									srcSet={LP1}
+									srcSet={ip}
 								/>
 								<div className="LPinfo">
 									<div className="LPname">Oppo A57 Ram 6/128G xanh</div>
@@ -163,8 +164,9 @@ function HomePage() {
 									<div className="LPaddress">TP. Hồ Chí Minh</div>
 									<div className="LPadd">Add to Cart</div>
 								</div>
-							</div>
-						</a>
+							</NavLink>
+						</div>
+						
 						<div className="blockLP">
 							<img className="imageLP"
 								loading="lazy"
