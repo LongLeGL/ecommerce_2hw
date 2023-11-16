@@ -10,11 +10,11 @@
     border-width: 1px;
     border-color: var(--border_gray);
     border-bottom-style: solid;
-    position: fixed;
+    position: absolute;
 }
 
 #upperControlsBar{
-    height: 8vh;
+    height: 9vh;
     display: flex;
     justify-content: space-evenly;
     padding: 0.5em 0;
@@ -41,6 +41,7 @@
 #upBar_Logo{
     margin-top: 0px;
     display: flex;
+    padding-bottom  : 0.5em;
 }
 #logoNumber{
     position: relative;

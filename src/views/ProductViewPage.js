@@ -64,7 +64,7 @@ function ProductViewing(props) {
                                 </NavLink>
 
 
-                                <NavLink to="/2HandWarehouse/Checkout">
+                                <NavLink to="/2HandWarehouse/Order">
                                     <Button className="button-instance">Buy It Now!</Button>
                                 </NavLink>
 

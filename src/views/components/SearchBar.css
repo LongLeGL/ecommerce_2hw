@@ -1,6 +1,6 @@
 #search-box{
     width: 40vw;
-    height: 70%;
+    height: 85%;
     background-color: rgba(244, 244, 245, 1);
     border: 1px var(--border_gray) solid;
     border-radius: 40px;
@@ -26,4 +26,9 @@
     height: 100%;
     background-color: transparent;
     color: rgb(164, 159, 152);
+    position: relative;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

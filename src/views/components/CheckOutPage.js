@@ -20,7 +20,7 @@ function CheckOutPage() {
 
 	const product  = {
         description: "Bucklo Wrop Wooden Table",
-        price: "109.36"
+        price: "69.36"
     }
 
     const handleApprove = (orderID) => {
@@ -35,7 +35,7 @@ function CheckOutPage() {
 			</div>
 
 			<div class="ml-[135px] flex gap-[20px]">
-				<div className='w-[932px] h-[202px] p-[2px] bg-[#e3e3e3] mb-[30px] flex flex-col items-center rounded-lg'>
+				<div className='w-[800px] h-[202px] p-[2px] bg-[#e3e3e3] mb-[30px] flex flex-col items-center rounded-lg'>
 					<div className='flex flex-col w-full bg-white rounded-lg'>
 						<div className='flex items-center justify-between '>
 							<div className='flex w-[450px] items-center justify-start py-[12px] pl-[94px]'>
@@ -95,7 +95,7 @@ function CheckOutPage() {
 					</div>
 				</div>
 
-				{selected && <div className='bg-[#e3e3e3] p-[2px] min-w-[450px] rounded-lg'>	
+				{selected && <div className='bg-[#e3e3e3] p-[2px] min-w-[340px] rounded-lg'>	
 					<div class="flex flex-col w-full p-[20px] bg-white rounded-lg">
 						<div class="summary">Summary</div>
 						<div class="total-final-price">
@@ -104,7 +104,7 @@ function CheckOutPage() {
 						</div>
 						<div class="shipping">
 							<div class="shipping-text">Shipping</div>
-							<div class="price">$40</div>
+							<div class="price">$0</div>
 						</div>
 						<hr
 							style={{
@@ -115,7 +115,7 @@ function CheckOutPage() {
 						/>
 						<div class="total">
 							<div class="total-text">Total</div>
-							<div class="price">$109.36</div>
+							<div class="price">$69.36</div>
 						</div>
 						<PayPalButtons 
 							style={{

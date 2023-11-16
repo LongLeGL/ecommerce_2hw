@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const Receipt = () => {
     return (
         <>
@@ -39,7 +41,7 @@ const Receipt = () => {
                             Shipping
                         </div>
                         <div>
-                            $40
+                            $0
                         </div>
                     </div>
 
@@ -48,12 +50,14 @@ const Receipt = () => {
                             Total
                         </div>
                         <div>
-                            $109.36
+                            $69.36
                         </div>
                     </div>
 
                     <button className="mx-[30px] bg-black rounded-3xl py-[12px]">
+                        <NavLink to={"/2HandWarehouse/DeliveryStatus"} style={{color:'white'}}>
                         View order status
+                        </NavLink>
                     </button>
                 </div>
             </div>

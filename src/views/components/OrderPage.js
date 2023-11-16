@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
-import CheckoutItem from '../../icons/checkoutItem.png'
+import CheckoutItem from '../../icons/phone.jpg'
 
 
 function OrderPage() {
 
 
     const product = {
-        description: "Bucklo Wrop Wooden Table",
-        price: "109.36"
+        description: "Oppo A5",
+        price: "$ 109.36"
     }
 
 
@@ -17,11 +17,11 @@ function OrderPage() {
     return (
         <div className='CheckOutPage'>
             
-            <div className="ml-[290px] mb-[30px] text-3xl font-light text-gray-600 mt-[40px]">
+            <div className="ml-[140px] mb-[30px] text-3xl font-light text-gray-600 mt-[40px]">
                 Shopping Cart 
             </div>
 
-            <div class="ml-[235px] flex gap-[20px]">
+            <div class="ml-[120px] flex gap-[20px]">
                 <div className='w-[932px] h-[202px] p-[2px] bg-[#e3e3e3] mb-[30px] flex flex-col items-center rounded-lg'>
                     <div className='flex flex-col w-full bg-white rounded-lg'>
                         <div className='flex items-center justify-between '>
@@ -47,13 +47,18 @@ function OrderPage() {
                                 <img
                                     src={CheckoutItem}
                                     alt='checkout item table'
+                                    style={{
+                                        width:"100px",
+                                        height:"100px",
+                                        marginLeft:"-20px"
+                                    }}
                                 />
                                 <div className='flex flex-col gap-[8px]'>
                                     <div className='text-xl text-[#1d1f1f]'>
-                                        Bucklo Wrop Wooden Table
+                                        Oppo A57 Ram 6/128G xanh
                                     </div>
                                     <div className=' text-base text-[#5d5f5f]'>
-                                        Color: Brown
+                                        Color: Blue
                                     </div>
                                     <div className='text-base text-[#5d5f5f]'>
                                         Dimension: 40 x 60 cm
@@ -105,7 +110,9 @@ function OrderPage() {
                             <div class="total-text">Total</div>
                             <div class="price">$69.36</div>
                         </div>
-                        <button type="button" class="cursor-pointer bg-[#000000] rounded-[30px] text-sm font-light h-[35px] mt-[20px] font-serif">Send order for approval</button>
+                        <NavLink to={'/2HandWarehouse/OrderValidate'}>
+                            <button type="button" class="cursor-pointer bg-[#000000] rounded-[30px] text-sm font-light h-[35px] mt-[20px] font-serif">Send order for approval</button>
+                        </NavLink>
                     </div>
                 </div>
             </div>
