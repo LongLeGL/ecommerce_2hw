@@ -26,7 +26,12 @@ const loginModalStyles = {
 ReactModal.setAppElement('#root');
 
 let states = sessionStorage.getItem('states');
-states = JSON.parse(states);
+if (states != null)	states = JSON.parse(states);
+else states = {
+	loggedIn: false,
+	order: false,
+	approved: false
+};
 console.log('Upper bar states:',states);
 
 function UpperBar (props) {

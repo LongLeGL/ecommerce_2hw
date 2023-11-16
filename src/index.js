@@ -15,6 +15,9 @@ import HomePage from './views/HomePage';
 import CheckOutPage from './views/components/CheckOutPage';
 import ProductPosting from './views/ProductPostingPage';
 import Receipt from './views/components/Receipt';
+import OrderedPage from './views/components/OrderedPage';
+import OrderValidate from './views/components/OrderValidate';
+import OrderPage from './views/components/OrderPage';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +54,17 @@ const router = createBrowserRouter([
       {
         path:"/2HandWarehouse/receipt/",
         element: <Receipt/>,
+      },{
+        path: "/2HandWarehouse/Order",
+        element: <OrderPage/>,
+      },
+      {
+        path: "/2HandWarehouse/Ordered",
+        element: <OrderedPage/>,
+      },
+      {
+        path: "/2HandWarehouse/OrderValidate",
+        element: <OrderValidate/>,
       },
     ],
   },
